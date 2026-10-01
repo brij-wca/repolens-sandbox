@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+  WHAT DOES HTML DO?
+  HTML (HyperText Markup Language) is the skeleton of a web page.
+  It uses TAGS like <p> and <h1> to tell the browser WHAT is on the page:
+  headings, paragraphs, images, links, lists, tables, forms, etc.
+  HTML does not "calculate" like Python. It only describes the structure/content.
+  (CSS makes it look good, JavaScript makes it interactive.)
+-->
+<html lang="en">
+
+<head>
+  <!-- HEAD: information ABOUT the page (not shown on the page itself) -->
+  <meta charset="UTF-8" />
+  <!-- Makes the page work properly on mobile screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- TITLE: the text shown on the browser tab -->
+  <title>My First Page</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <!-- BODY: everything you see on the web page goes here -->
+
+  <!-- 1. HEADINGS: h1 is the biggest, h6 is the smallest -->
+  <h1>Welcome to My First Web Page</h1>
+  <h2>About Me</h2>
+
+  <!-- 2. PARAGRAPH: normal text -->
+  <p>Hello! I am a beginner learning HTML. I already know some Python.</p>
+
+  <!-- 3. BOLD and ITALIC text -->
+  <p>HTML is <strong>very important</strong> and <em>easy to learn</em>.</p>
+
+  <!-- 4. LINE BREAK and HORIZONTAL LINE -->
+  <p>This is line one.<br />This is line two (after a line break).</p>
+  <hr />
+
+  <!-- 5. LIST: unordered (bullets) -->
+  <h2>What I am Learning</h2>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+
+  <!-- 6. LIST: ordered (numbers) -->
+  <h2>My Learning Steps</h2>
+  <ol>
+    <li>Install VS Code</li>
+    <li>Write HTML code</li>
+    <li>Open it in the browser</li>
+  </ol>
+
+  <!-- 7. LINK: <a> takes you to another page -->
+  <h2>Useful Link</h2>
+  <p>
+    Learn more on
+    <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">MDN Web Docs</a>
+  </p>
+
+  <!-- 8. IMAGE: src = image address, alt = text shown if image fails -->
+  <h2>My Picture</h2>
+  <img src="https://picsum.photos/300/200" alt="A sample random image" />
+
+  <!-- 9. TABLE: rows (tr), heading cells (th), data cells (td) -->
+  <h2>My Study Plan</h2>
+  <table border="1">
+    <tr>
+      <th>Subject</th>
+      <th>Time</th>
+    </tr>
+    <tr>
+      <td>HTML</td>
+      <td>1 hour</td>
+    </tr>
+    <tr>
+      <td>Python</td>
+      <td>2 hours</td>
+    </tr>
+  </table>
+
+  <!-- 10. FORM: takes input from the user -->
+  <h2>Contact Me</h2>
+  <form>
+    <label>Name:</label>
+    <input type="text" placeholder="Enter your name" />
+    <br /><br />
+    <label>Email:</label>
+    <input type="email" placeholder="Enter your email" />
+    <br /><br />
+    
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- 11. DIV and SPAN: containers used to group content (mostly used with CSS) -->
+  <div>
+    <p>This paragraph is inside a div. <span>This is a span.</span></p>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+/*
+  WHAT DOES CSS DO?
+  CSS (Cascading Style Sheets) controls how an HTML page LOOKS:
+  colors, fonts, spacing, borders and layout.
+  HTML = structure (skeleton), CSS = design (paint and decoration).
+
+  HOW CSS IS WRITTEN:
+  selector {
+    property: value;
+  }
+  selector = which HTML element to style (h1, p, .class, #id)
+  property = what to change (color, font-size...)
+  value    = how to change it (blue, 20px...)
+*/
+
+/* 1. BODY: styles the whole page */
+body {
+  font-family: Arial, sans-serif;   /* text font */
+  background-color: #f4f6f8;        /* light grey page background */
+  color: #333333;                   /* default text color */
+  margin: 0;                        /* remove default outer space */
+  padding: 20px;                    /* space inside the body edges */
+  line-height: 1.6;                 /* space between lines of text */
+}
+
+/* 2. HEADINGS */
+h1 {
+  color: #0b5ed7;                   /* blue */
+  text-align: center;               /* center the text */
+}
+
+h2 {
+  color: #d63384;                   /* pink */
+  border-bottom: 2px solid #d63384; /* line under the heading */
+  padding-bottom: 5px;
+}
+
+/* 3. PARAGRAPH */
+p {
+  font-size: 18px;
+}
+
+/* 4. CLASS SELECTOR (starts with a dot .)
+   Works on any element that has class="highlight" in HTML */
+.highlight {
+  background-color: yellow;
+  padding: 8px;
+  border-radius: 6px;               /* rounded corners */
+}
+
+/* 5. ID SELECTOR (starts with a hash #)
+   Works on the ONE element that has id="main-title" in HTML */
+#main-title {
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+/* 6. LISTS */
+ul li {
+  color: green;
+}
+
+ol li {
+  color: darkorange;
+}
+
+/* 7. LINKS and HOVER (hover = when the mouse is over it) */
+a {
+  color: #0b5ed7;
+  text-decoration: none;            /* remove underline */
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/* 8. IMAGE */
+img {
+  width: 300px;
+  border: 4px solid #0b5ed7;
+  border-radius: 12px;
+}
+
+/* 9. TABLE */
+table {
+  border-collapse: collapse;        /* join the borders into single lines */
+  width: 60%;
+  background-color: white;
+}
+
+th, td {
+  border: 1px solid #999999;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #0b5ed7;
+  color: white;
+}
+
+/* 10. FORM INPUTS and BUTTON */
+input {
+  padding: 8px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #198754;        /* green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;                  /* hand icon on hover */
+}
+
+button:hover {
+  background-color: #146c43;        /* darker green on hover */
+}
+
+/* 11. DIV: a box with padding, border and margin (the "box model") */
+div {
+  background-color: white;
+  border: 2px dashed #6c757d;
+  padding: 15px;                    /* space INSIDE the border */
+  margin-top: 20px;                 /* space OUTSIDE the border */
+}
+
+/* SPAN inside a div */
+span {
+  color: purple;
+  font-weight: bold;
+}
